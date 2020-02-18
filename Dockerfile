@@ -1,6 +1,5 @@
-FROM alpine:latest
+FROM python:2
 
-RUN apk update \
-    && apk upgrade
+COPY port.py  /tmp/port.py
 
-COPY 1.txt /tmp
+CMD [ "python", "/tmp/port.py" ]
