@@ -10,7 +10,7 @@ This Dockerfile based on python:2 image from [here](https://hub.docker.com/_/pyt
 docker build -t python_port:v1 -f Dockerfile .
 ```
 
-*run docker container with port forwarding
+* Run docker container with port forwarding
 
 ```bash
 docker run -it -p 1337:8888 python_port:v1
